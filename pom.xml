@@ -9,9 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.mgy</groupId>
-    <artifactId>project</artifactId>
+    <artifactId>alibibi</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>project</name>
+    <packaging>war</packaging>
+
+    <name>alibibi</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -45,6 +47,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -52,6 +60,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.mgy.SimplecrudApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>

@@ -17,6 +17,7 @@ import com.mgy.dao.CustomerDAO;
 import com.mgy.model.Customer;
 
 @RestController
+@SuppressWarnings("unchecked")
 public class CustomerRestController {
 
 	

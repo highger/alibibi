@@ -15,10 +15,10 @@ public class CustomerDAO {
 	private static List<Customer> customers;
 	{
 		customers = new ArrayList<>();
-		customers.add(new Customer(101, "John", "Doe", "djohn@gmail.com", "121-232-3435"));
-		customers.add(new Customer(201, "Russ", "Smith", "sruss@gmail.com", "343-545-2345"));
-		customers.add(new Customer(301, "Kate", "Williams", "kwilliams@gmail.com", "876-237-2987"));
-		customers.add(new Customer(LocalTime.now().toNanoOfDay(), "Viral", "Patel", "vpatel@gmail.com", "356-758-8736"));
+		customers.add(new Customer(1, "张一培", "小萌", "djohn@gmail.com", "10086"));
+		customers.add(new Customer(2, "张建发", "逼发", "sruss@gmail.com", "10010"));
+		customers.add(new Customer(3, "吴坤", "逼坤", "kwilliams@gmail.com", "10001"));
+		customers.add(new Customer(LocalTime.now().toNanoOfDay(), "马光耀", "小马哥", "vpatel@gmail.com", "8888888"));
 	}
 
 	/**

@@ -18,7 +18,7 @@ public class CustomerDAO {
 		customers.add(new Customer(1, "张一培", "小萌", "djohn@gmail.com", "10086"));
 		customers.add(new Customer(2, "张建发", "逼发", "sruss@gmail.com", "10010"));
 		customers.add(new Customer(3, "吴坤", "逼坤", "kwilliams@gmail.com", "10001"));
-		customers.add(new Customer(LocalTime.now().toNanoOfDay(), "马光耀", "小马哥", "vpatel@gmail.com", "8888888"));
+		customers.add(new Customer(LocalTime.now().toNanoOfDay(), "马光耀", "马哥", "vpatel@gmail.com", "8888888"));
 	}
 
 	/**

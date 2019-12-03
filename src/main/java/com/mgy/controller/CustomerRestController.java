@@ -2,6 +2,7 @@ package com.mgy.controller;
 
 import java.util.List;
 
+import com.mgy.idempotence.IdempotentConsume;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,6 +27,7 @@ public class CustomerRestController {
 
 	
 	@GetMapping("/customers")
+    @IdempotentConsume
 	public List getCustomers() {
 		return customerDAO.list();
 	}
